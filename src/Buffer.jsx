@@ -4,7 +4,7 @@ import "./assets/styles/process.css";
 
 const Buffer = ({ title, secondsToComplete, statusListState, id}) => {
 
-  const [centimeInterval, setSeconds] = useState(secondsToComplete);
+  const [centimeInterval, setSeconds] = useState(100);
   const [statusList, ] = statusListState;
 
   useEffect(() => {
