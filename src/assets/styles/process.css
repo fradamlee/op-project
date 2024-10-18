@@ -1,0 +1,74 @@
+
+.process-list-container {
+    height: 60%;
+    width: 70%;
+}
+
+.process-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 60% 10% 10% 10%;
+    grid-template-rows: 100%;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0e0e0; /* Soft light background */
+    border-radius: 30px;
+    box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff; /* Neumorphic shadow */
+    margin: 15px 0;
+}
+
+.process-container button {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.process-container p {
+    margin-left: 15%;
+}
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #e0e0e0; /* Match the background for recessed effect */
+    box-shadow: inset 3px 3px 8px #bebebe, inset -3px -3px 8px #ffffff; /* Inset shadow for depth */
+    overflow: hidden; /* Ensures progress content stays inside the rounded corners */
+}
+
+.progress-bar-content {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient for modern look */
+    transition: width 0.3s ease; /* Smooth transition for width changes */
+}
+
+.buffer-bar-content {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #00b3ff, #01fc9c); /* Gradient for modern look */
+    transition: width 0.3s ease; /* Smooth transition for width changes */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: #e0e0e0;
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease
+}
+
+button:active {
+    box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+label, p {
+    font-size: 14px;
+    color: #555555; /* Softer text color */
+}
